@@ -3,13 +3,13 @@ import * as FileSystem from 'expo-file-system';
 import React, { useState } from 'react';
 import { Alert, Modal, ScrollView, StyleSheet, Text, View } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
-import { hashData, signData } from '../../lib/crypto';
-import { addCredential } from '../../store/credentials';
-import { addHashToSnapshot } from '../../store/snapshot';
-import { colors, fontFamilies, fontSizes } from '../../theme';
-import Button from '../components/Button';
-import Card from '../components/Card';
-import Input from '../components/Input';
+import { hashData, signData } from '../lib/crypto';
+import { addCredential } from '../store/credentials';
+import { addHashToSnapshot } from '../store/snapshot';
+import { colors, fontFamilies, fontSizes } from '../theme';
+import Button from './components/Button';
+import Card from './components/Card';
+import Input from './components/Input';
 
 export default function CredentialForm() {
   const [name, setName] = useState('');

@@ -1,10 +1,10 @@
 import * as FileSystem from 'expo-file-system';
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, Alert, FlatList, Modal, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { Credential, getCredentials } from '../../store/credentials';
-import { colors, fontFamilies, fontSizes } from '../../theme';
-import Button from '../components/Button';
-import Card from '../components/Card';
+import { Credential, getCredentials } from '../store/credentials';
+import { colors, fontFamilies, fontSizes } from '../theme';
+import Button from './components/Button';
+import Card from './components/Card';
 
 export default function CredentialList() {
   const [credentials, setCredentials] = useState<Credential[]>([]);

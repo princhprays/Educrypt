@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
-import { getPublicKey } from '../../lib/crypto';
-import { colors, fontFamilies, fontSizes } from '../../theme';
+import { getPublicKey } from '../lib/crypto';
+import { colors, fontFamilies, fontSizes } from '../theme';
 
 export default function PublicKey() {
   const [publicKey, setPublicKey] = useState('');

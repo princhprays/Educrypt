@@ -1,10 +1,10 @@
 import * as FileSystem from 'expo-file-system';
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, Alert, FlatList, StyleSheet, Text, View } from 'react-native';
-import { getSnapshotHashes } from '../../store/snapshot';
-import { colors, fontFamilies, fontSizes } from '../../theme';
-import Button from '../components/Button';
-import Card from '../components/Card';
+import { getSnapshotHashes } from '../store/snapshot';
+import { colors, fontFamilies, fontSizes } from '../theme';
+import Button from './components/Button';
+import Card from './components/Card';
 
 export default function SnapshotExport() {
   const [hashes, setHashes] = useState<string[]>([]);
